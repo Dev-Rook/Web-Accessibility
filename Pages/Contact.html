@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Contact.css">
+    <title>Contact</title>
+</head>
+<body>
+     <!-- Nav Start -->
+     <nav class="Navigation">
+        <!-- Nav Wrapper Start -->
+        <div class="Nav-Wrapper">
+          <!-- Left Side Start -->
+          <div class="Left-Side">
+            <img src="../Assets/Icons/Logo.png" alt="" class="Logo" />
+  
+            <ul class="Navlink-Container">
+              <li class="Navlink-Items">
+                <a href="#" class="Navlink"> Home </a>
+              </li>
+              <li class="Navlink-Items">
+                <a href="#" class="Navlink"> Text </a>
+              </li>
+              <li class="Navlink-Items">
+                <a href="#" class="Navlink"> Images </a>
+              </li>
+              <li class="Navlink-Items">
+                <a href="#" class="Navlink"> Videos </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Left Side End -->
+  
+          <!-- Right Side Start -->
+          <div class="Right-Side">
+            <div class="Search-Container">
+              <img
+                src="../Assets/Icons/Search-Icon.png"
+                alt=""
+                class="Search-Icon"
+              />
+              <input placeholder="Search.." type="text" class="Search" />
+            </div>
+  
+            <a href="#" class="Navlink-Login"> Login </a>
+  
+            <button class="Articles-Button">Articles</button>
+  
+            <img
+              onclick="toggle()"
+              src="../Assets/Icons/Menu-Icon.png"
+              alt=""
+              class="Menu-Icon"
+            />
+          </div>
+          <!-- Right Side End -->
+        </div>
+        <!-- Nav Wrapper End -->
+  
+        <!-- Responsive Search Start -->
+        <div class="Responsive-Search-Container">
+          <img
+            src="./Assets/Icons/Search-Icon.png"
+            alt=""
+            class="Responsive-Search-Icon"
+          />
+          <input placeholder="Search.." type="text" class="Responsive-Search" />
+        </div>
+        <!-- Responsive Search End -->
+  
+        <!-- Mobile Menu Start -->
+        <div class="Mobile-Menu">
+          <img src="./Assets/Images/Logo.png" alt="" class="Mobile-Logo" />
+  
+          <img
+            onclick="toggle()"
+            src="./Assets/Icons/Close-Icon.png"
+            alt=""
+            class="CloseIcon"
+          />
+  
+          <ul class="Mobile-Navlink-Container">
+            <li class="Mobile-Navlink-Items">
+              <a href="#" class="Mobile-Navlink"> Home </a>
+            </li>
+            <li class="Mobile-Navlink-Items">
+              <a href="#" class="Mobile-Navlink"> About </a>
+            </li>
+            <li class="Mobile-Navlink-Items">
+              <a href="#" class="Mobile-Navlink"> Products </a>
+            </li>
+            <li class="Mobile-Navlink-Items">
+              <a href="#" class="Mobile-Navlink"> Contact </a>
+            </li>
+            <li class="Mobile-Navlink-Items">
+              <a href="#" class="Mobile-Navlink"> Login </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Menu End -->
+      </nav>
+      <!-- Nav End -->
+
+
+      <form ref={form} onSubmit={sendEmail} class="Contact-Form">
+        <fieldset class="Name--Email">
+          <input
+            required
+            type="text"
+            class="Input"
+            name="Name"
+            placeholder="Email"
+          />
+          <input
+            required
+            type="text"
+            class="Input"
+            name="Email"
+            placeholder="Name"
+          />
+        </fieldset>
+
+        <fieldset class="Subject--Message">
+          <input
+            required
+            type="text"
+            class="Input Subject"
+            name="Subject"
+            placeholder="Subject"
+          />
+          <textarea
+            required
+            name="Message"
+            class="Input Message-Box"
+            placeholder="Messgae"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+      </form>
+    </div>
+    
+</body>
+</html>
