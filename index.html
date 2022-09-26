@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    <title>Web</title>
+  </head>
+  <body>
+    <!-- Nav Start -->
+    <nav class="Navigation">
+      <!-- Nav Wrapper Start -->
+      <div class="Nav-Wrapper">
+        <!-- Left Side Start -->
+        <div class="Left-Side">
+          <img src="./Assets/Icons/Logo.png" alt="" class="Logo" />
+
+          <ul class="Navlink-Container">
+            <li class="Navlink-Items">
+              <a href="#" class="Navlink"> Home </a>
+            </li>
+            <li class="Navlink-Items">
+              <a href="#" class="Navlink"> Text </a>
+            </li>
+            <li class="Navlink-Items">
+              <a href="#" class="Navlink"> Images </a>
+            </li>
+            <li class="Navlink-Items">
+              <a href="#" class="Navlink"> Videos </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Left Side End -->
+
+        <!-- Right Side Start -->
+        <div class="Right-Side">
+          <div class="Search-Container">
+            <img
+              src="./Assets/Icons/Search-Icon.png"
+              alt=""
+              class="Search-Icon"
+            />
+            <input placeholder="Search.." type="text" class="Search" />
+          </div>
+
+          <a href="#" class="Navlink-Login"> Login </a>
+
+          <button class="Articles-Button">Articles</button>
+
+          <img
+            onclick="toggle()"
+            src="./Assets/Icons/Menu-Icon.png"
+            alt=""
+            class="Menu-Icon"
+          />
+        </div>
+        <!-- Right Side End -->
+      </div>
+      <!-- Nav Wrapper End -->
+
+      <!-- Responsive Search Start -->
+      <div class="Responsive-Search-Container">
+        <img
+          src="./Assets/Icons/Search-Icon.png"
+          alt=""
+          class="Responsive-Search-Icon"
+        />
+        <input placeholder="Search.." type="text" class="Responsive-Search" />
+      </div>
+      <!-- Responsive Search End -->
+
+      <!-- Mobile Menu Start -->
+      <div class="Mobile-Menu">
+        <img src="./Assets/Images/Logo.png" alt="" class="Mobile-Logo" />
+
+        <img
+          onclick="toggle()"
+          src="./Assets/Icons/Close-Icon.png"
+          alt=""
+          class="CloseIcon"
+        />
+
+        <ul class="Mobile-Navlink-Container">
+          <li class="Mobile-Navlink-Items">
+            <a href="#" class="Mobile-Navlink"> Home </a>
+          </li>
+          <li class="Mobile-Navlink-Items">
+            <a href="#" class="Mobile-Navlink"> About </a>
+          </li>
+          <li class="Mobile-Navlink-Items">
+            <a href="#" class="Mobile-Navlink"> Products </a>
+          </li>
+          <li class="Mobile-Navlink-Items">
+            <a href="#" class="Mobile-Navlink"> Contact </a>
+          </li>
+          <li class="Mobile-Navlink-Items">
+            <a href="#" class="Mobile-Navlink"> Login </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Nav End -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <div class="Card">
+            <div class="Image_Container">
+              <img
+                src="./Assets/Images/Text.png"
+                alt="Text Card"
+                class="Display_Image"
+              />
+            </div>
+
+            <div class="Info_Container">
+              <h1 class="Title">Text</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Slide -->
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <div class="Card">
+            <div class="Image_Container">
+              <img
+                src="./Assets/Images/Image.jpg"
+                alt="Image Card"
+                class="Display_Image"
+              />
+            </div>
+
+            <div class="Info_Container">
+              <h1 class="Title">Image</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Slide -->
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <div class="Card">
+            <div class="Image_Container">
+              <img
+                src="./Assets/Images/Video.jpg"
+                alt="Video Card"
+                class="Display_Image"
+              />
+            </div>
+
+            <div class="Info_Container">
+              <h1 class="Title">Video</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Slide -->
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <div class="Card">
+            <div class="Image_Container">
+              <img
+                src="./Assets/Images/Audio.webp"
+                alt=""
+                class="Display_Image"
+              />
+            </div>
+
+            <div class="Info_Container">
+              <h1 class="Title">Audio</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Slide -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
