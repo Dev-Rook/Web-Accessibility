@@ -259,6 +259,41 @@ body {
 
 /* Mobile Menu End */
 
+
+
+.Large_Title {
+  margin: auto;
+  margin-top: 100px;
+
+  color: red;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  animation: flicker 1.5s infinite alternate;
+}
+
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 1px #f20407, 0 0 10px #f20407, 0 0 1px #f20407,
+      0 0 1px #ff7a00, 0 0 82px #ff7a00, 0 0 1px #ff7a00, 0 0 1px #ff7a00,
+      0 0 1px #ff7a00;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+
+
 /* Swiper Start */
 
 .swiper {
@@ -266,7 +301,7 @@ body {
   height: 100%;
   border: 1px solid black;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 100px;
   transition: 0.5s;
 }
 
