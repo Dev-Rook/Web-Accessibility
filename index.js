@@ -31,4 +31,31 @@ const swiper = new Swiper(".mySwiper", {
     //     delay: 2500,
     //     disableOnInteraction: false,
     //   },
+    breakpoints: {
+      360: {
+        width: 360,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      380: {
+        width: 380,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      480: {
+        width: 480,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+      768: {
+        width: 768,
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1920: {
+        width: 1920,
+        slidesPerView: 6,
+        spaceBetween: 0,
+      },
+    }
   });
